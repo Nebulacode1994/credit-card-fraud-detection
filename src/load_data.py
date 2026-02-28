@@ -6,7 +6,9 @@ from pathlib import Path
 # get the directory of this file src/
 base_dir = os.path.dirname(os.path.abspath(__file__))
 
-data_path = os.path.join(base_dir,"..","..","Documents","creditcardfraud","creditcard.csv")
+project_dir = os.path.dirname(base_dir)
+
+data_path = os.path.join(project_dir,"data","creditcard.csv")
 
 df = pd.read_csv(data_path)
 
